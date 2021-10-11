@@ -1,1 +1,31 @@
-<p>quote works!</p>
+
+<div class="dec">
+    <div class="container">
+        <h1>My Quotes</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-7">
+                <p>Get inspired by our qoutes and you can also create your own quotes 
+                    
+                </p>
+                <div *ngFor='let quote of quotes; let i = index' class="card-body">
+                <li class="card card-body">{{quote.name}} <br><br> 
+                    {{quote.description}}
+                </li>
+                <button (click)= 'toggleDetails (i)' class="btn btn-outline-primary btn-md">Quote Description</button><br>
+                
+                <div *ngIf='quote.showDescription'><br>
+                    <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+                </div>
+                <div class="description">
+                    <button type="button" class="btn btn-warning" (click) = 'upvoteButton(i)'>Upvotes.. : {{quote.upvotes}}</button><br><br>
+                    <button type="button" class="btn btn-warning" (click) = 'downvoteButton(i)'>Downvotes :  {{quote.downvotes}}</button><br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+              <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+            </div>
+         </div>
+       </div>
+    </div>

@@ -10,3 +10,7 @@ button {
     border-radius: 25px;
     display: flex;
 }
+.dec{
+    background-color: pink;
+    color: blue;
+}

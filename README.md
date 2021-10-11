@@ -44,6 +44,13 @@ To access this project on your local files, you can clone it using these steps
 to clone `$ git clone https://github.com/hassan3111/Angular-App1
 This will clone the repository into your local folder
 
+
+
+## Here is a livelink:
+
+
+
+
 ## Technologies Used
 
 1.angular 2.bootstrap  3. javascript 4. Html 5.Css  6. Typescript.

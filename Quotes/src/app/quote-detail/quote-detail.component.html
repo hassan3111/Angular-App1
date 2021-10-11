@@ -1,1 +1,5 @@
-<p>quote-detail works!</p>
+
+<p> Posted On : {{quote.postDate|date:'medium'}}</p>
+<p>Author: {{quote.author}}</p>
+
+<button class=" btn btn-outline-danger mb-3" (click)='quoteDelete(true)' >Delete Quote</button><br><br>

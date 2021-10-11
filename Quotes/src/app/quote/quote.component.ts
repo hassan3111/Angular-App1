@@ -24,6 +24,22 @@ export class QuoteComponent implements OnInit {
     }
   }
 
+  upvotes:number = 0;
+  downvotes: number = 0;
+
+  upvoteButton(i:number){
+    this.quotes[i].upvotes++;
+  }
+  downvoteButton(i:number){
+    this.quotes[i].downvotes++;
+  }
+
+  addNewQuote(quote: Quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.unshift(quote);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

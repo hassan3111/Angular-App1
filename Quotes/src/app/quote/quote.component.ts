@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
     new Quote(3,'Change', 'Any change, even a change for the better, is always accompanied by discomfort', 'Arnold Bennett', new Date(2021,9,11), 0,0)
  
   ]
-  
+
   deleteQuote(isComplete: any, index: number){
     if(isComplete){
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}..?`)
@@ -27,6 +27,9 @@ export class QuoteComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+ toggleDetails(index:number){
+    this.quotes[index].showDescription =! this.quotes[index].showDescription;
   }
 
 }

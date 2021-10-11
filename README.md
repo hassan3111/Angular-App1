@@ -49,5 +49,5 @@ This will clone the repository into your local folder
 1.angular 2.bootstrap  3. javascript 4. Html 5.Css  6. Typescript.
 
 Licence
-This project is under the MIT licence
+This project is under the [MIT] licence
 

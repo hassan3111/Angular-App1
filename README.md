@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+ ## Author
+ Ali Hassan
+
+## Description
+This is a website about  quotes app
+
+## Prerequisites
+You need to have git installed You can install it with the following command in your terminal $ sudo apt install git-all
+
+## Setup
+To access this project on your local files, you can clone it using these steps
+
+1.Open your terminal
+2.Use this command 
+to clone `$ git clone https://github.com/hassan3111/Angular-App1
+This will clone the repository into your local folder
+
+## Technologies Used
+
+1.angular 2.bootstrap  3. javascript 4. Html 5.Css  6. Typescript.
+
+Licence
+This project is under the MIT licence
+
